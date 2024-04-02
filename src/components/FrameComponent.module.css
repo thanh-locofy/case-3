@@ -149,7 +149,7 @@
 }
 .field {
   align-self: stretch;
-  flex: 1;
+  height: 208px;
   flex-direction: column;
   gap: var(--gap-base);
   max-width: 100%;
@@ -168,9 +168,8 @@
 .button {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-sm) var(--padding-xl);
+  padding: var(--padding-sm) var(--padding-35xl);
   background-color: var(--branding-success);
-  align-self: stretch;
   border-radius: var(--br-24xl);
   display: flex;
   flex-direction: row;
@@ -180,6 +179,42 @@
 }
 .button:hover {
   background-color: var(--color-limegreen-100);
+}
+.normal1 {
+  position: relative;
+  font-size: var(--body-small-body-small-400-size);
+  line-height: 17px;
+  font-weight: 600;
+  font-family: var(--body-small-body-small-400);
+  color: var(--gray-scale-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 40px;
+}
+.button1,
+.scalingSystem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-xl);
+  background-color: var(--color-gray-100);
+  width: 220px;
+  border-radius: var(--br-24xl);
+  justify-content: center;
+  box-sizing: border-box;
+}
+.button1:hover {
+  background-color: var(--color-darkslategray-100);
+}
+.scalingSystem {
+  align-self: stretch;
+  justify-content: space-between;
+  padding: 0 var(--padding-7xs);
+  gap: var(--gap-xl);
 }
 .alreadyHaveAccount,
 .login {
@@ -205,7 +240,6 @@
 }
 .createAccount,
 .createAccountWrapper {
-  align-self: stretch;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -224,7 +258,7 @@
   gap: var(--gap-xl);
 }
 .createAccountWrapper {
-  height: 512px;
+  align-self: stretch;
   flex-direction: row;
   align-items: flex-start;
   padding: 0 var(--padding-xl) var(--padding-61xl);
@@ -233,6 +267,9 @@
   .createAccount1 {
     font-size: var(--font-size-7xl);
     line-height: 31px;
+  }
+  .scalingSystem {
+    flex-wrap: wrap;
   }
   .createAccountWrapper {
     padding-bottom: var(--padding-33xl);
