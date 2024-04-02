@@ -43,9 +43,14 @@ const FrameComponent: FunctionComponent = () => {
             >{`Accept all terms & Conditions`}</div>
           </div>
         </div>
-        <button className={styles.button}>
-          <div className={styles.normal}>Create Account</div>
-        </button>
+        <div className={styles.scalingSystem}>
+          <button className={styles.button}>
+            <div className={styles.normal}>Create Account</div>
+          </button>
+          <button className={styles.button1}>
+            <div className={styles.normal1}>Reset</div>
+          </button>
+        </div>
         <div className={styles.dontHaveAccount}>
           <div className={styles.alreadyHaveAccount}>Already have account</div>
           <div className={styles.login}> Login</div>
